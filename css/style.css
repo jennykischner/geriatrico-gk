@@ -1,0 +1,561 @@
+/* Fuente para títulos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #abb39c, white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*Estilos Header y Nav*/
+
+header {
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+}
+
+header .logo {
+  width: 180px;
+  height: 150px;
+}
+
+header .navbar-toggler {
+  background-color: white;
+}
+
+header .navbar-toggler-icon {
+  background-color: white;
+}
+
+header .nav-link {
+  display: inline;
+  margin-right: 20px;
+  font-family: "Baskervville", serif;
+  color: #333333;
+  font-size: 20px;
+}
+
+header .navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+  background-color: #abb39c;
+}
+
+header .navbar-nav .nav-link {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header .navbar-nav {
+  margin-left: auto;
+  margin-top: 100px;
+}
+
+/*Responsive*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  header {
+    height: auto;
+  }
+
+  header .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  header .navbar-nav {
+    margin-top: 20px;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    height: 120px;
+  }
+
+  header .logo {
+    width: 150px;
+    height: 120px;
+  }
+
+  header .nav-link {
+    font-size: 18px;
+  }
+
+  header .navbar-nav {
+    margin-top: 60px;
+  }
+}
+
+/*Estilos titulo principal y párrafo*/
+.titulo-principal {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #333333;
+  font-size: 40px;
+}
+
+.parrafo-principal {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.parrafo-secundario {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/*Responsive*/
+
+/*Estilos para celular*/
+
+@media (max-width: 767px) {
+  .titulo-principal {
+    font-size: 32px;
+  }
+
+  .parrafo-principal,
+  .parrafo-secundario {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .titulo-principal {
+    font-size: 36px;
+  }
+}
+
+/*Estilo de Imagen Principal*/
+
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-principal img {
+  width: 75%;
+  height: auto;
+}
+
+/*Responsive*/
+
+/*Estilos para celular*/
+
+@media (max-width: 767px) {
+  .contenedor-principal img {
+    width: 100%;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contenedor-principal img {
+    width: 85%;
+  }
+}
+
+/*Estilos Footer*/
+
+.site-footer {
+  background-color: #abb39c;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 25px;
+  margin-right: 20px;
+  padding: 0px 15px;
+}
+
+.quick-links {
+  margin-top: 30px;
+  float: right;
+}
+
+/*Responsive*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .site-footer p {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .quick-links {
+    display: none;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .social-icons a {
+    font-size: 22px;
+  }
+}
+
+/*Estilos HTML Acerca de Nosotros*/
+
+/*Estilos Grid*/
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 100px;
+}
+
+/*Estilos Cards*/
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-text {
+  font-size: 10px;
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/*Responsive*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .contenedor-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card-text {
+    font-size: 14px;
+  }
+}
+
+/*Estilos HTML Servicios*/
+/*Estilos Grid*/
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+  height: 500px;
+  max-width: 1200px;
+}
+
+.card {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  background-color: #abb39c;
+}
+
+.list-group-flush {
+  padding-left: 0;
+}
+
+.list-group-item {
+  font-size: 16px;
+  color: #555;
+  font-family: "Lato", sans-serif;
+  display: list-item;
+  list-style: disc inside;
+  margin-left: 0;
+  padding-left: 15px;
+}
+
+/*Responsive*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    gap: 10px;
+    justify-items: center;
+    margin: 50px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .servicios-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*Estilos HTML Galeria*/
+/*Estilos Grid*/
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+}
+
+.card {
+  width: 18rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarjeta-antes-footer {
+  margin-bottom: 150px;
+}
+
+/*Responsive*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Estilos HTML Contacto*/
+
+/*Estilos Formulario*/
+.custom-form {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  padding: 8px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background-color: #abb39c;
+  font-family: "Lato", sans-serif;
+  color: #333333;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #333333;
+  outline: none;
+}
+
+/*Responsive*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .titulo-principal {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  .custom-form {
+    max-width: 50%;
+  }
+}
+
+/*Estilo mapa*/
+
+iframe {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.contenedor {
+  display: flex;
+}
+
+.left-column {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.right-column {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/*Estilos Información del lugar*/
+
+.titulo-secundario {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.parrafo-contacto {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+}
+
+.parrafo-antes-footer {
+  margin-bottom: 200px;
+  font-family: "Lato", sans-serif;
+}
+
+/*Responsive*/
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    padding: 0;
+  }
+
+  .titulo-secundario {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  iframe {
+    width: 80%;
+    height: 200px;
+    margin: 10px 0;
+  }
+}

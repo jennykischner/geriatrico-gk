@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Link Iconos Font-Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <!--Navegador-->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <img class="logo" src="../imagenes/imagen-logo.jpeg" alt="logo" />
+          <div class="navbar-nav">
+
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+            <a class="nav-link" href="servicios.html">Servicios</a>
+            <a class="nav-link" href="galeria.html">Galeria</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Titulo Principal-->
+  <h1 class="titulo-principal">Dejanos tu consulta o vení a visitarnos</h1>
+
+  <!--Formulario-->
+  <div class="contenedor">
+    <div class="left-column">
+      <form class="custom-form">
+        <div class="form-group">
+          <label for="inputApellidoNombre">Apellido y Nombre:</label>
+          <input type="text" class="form-control" id="inputApellidoNombre" placeholder="Tu Apellido y Nombre" />
+        </div>
+        <div class="form-group">
+          <label for="inputContacto">Contacto:</label>
+          <input type="text" class="form-control" id="inputContacto" placeholder="Tu contacto" />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Mail:</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Consulta:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+        <button type="reset" class="btn">Borrar</button>
+      </form>
+    </div>
+
+    <div class="right-column">
+      <!--Titulo Secundario-->
+      <h2 class="titulo-secundario">Información</h2>
+      <!--Mapa-->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.9377588942493!2d-58.542736224817354!3d-34.52980485359753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0bb09f14811%3A0xfd715cb7cad26a43!2sACE%2C%20Juan%20Jos%C3%A9%20Castelli%206203%2C%20B1606%20Carapachay%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1700146061102!5m2!1ses!2sar"
+        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!--Información del Lugar-->
+
+      <div class="parrafo-contacto parrafo-antes-footer">
+      <p>Domicilio: Juan José Castelli 6200, Vicente López</p>
+      <p>Teléfono: 1134654780</p>
+      <p>
+        Horarios de visita: Lunes a Viernes de 9 a 12 Hs y de 15 a 18 Hs -
+        Sábados y Domingos de 10 a 12 Hs y de 15 a 19 Hs
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="parrafo-footer">© 2023 Geriátrico GK - Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="https://web.whatsapp.com/" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://github.com/GerardoKischner" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:https://gmail.com/" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+  </footer>
+  <!--Link Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
