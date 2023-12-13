@@ -59,43 +59,6 @@ header .navbar-nav {
   margin-top: 100px;
 }
 
-/*Responsive*/
-
-/*Estilos para celular*/
-@media (max-width: 767px) {
-  header {
-    height: auto;
-  }
-
-  header .logo {
-    width: 120px;
-    height: auto;
-  }
-
-  header .navbar-nav {
-    margin-top: 20px;
-  }
-}
-
-/* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  header {
-    height: 120px;
-  }
-
-  header .logo {
-    width: 150px;
-    height: 120px;
-  }
-
-  header .nav-link {
-    font-size: 18px;
-  }
-
-  header .navbar-nav {
-    margin-top: 60px;
-  }
-}
 
 /*Estilos titulo principal y párrafo*/
 .titulo-principal {
@@ -120,27 +83,6 @@ header .navbar-nav {
   padding: 10px;
 }
 
-/*Responsive*/
-
-/*Estilos para celular*/
-
-@media (max-width: 767px) {
-  .titulo-principal {
-    font-size: 32px;
-  }
-
-  .parrafo-principal,
-  .parrafo-secundario {
-    font-size: 16px;
-  }
-}
-
-/* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .titulo-principal {
-    font-size: 36px;
-  }
-}
 
 /*Estilo de Imagen Principal*/
 
@@ -154,22 +96,6 @@ header .navbar-nav {
   height: auto;
 }
 
-/*Responsive*/
-
-/*Estilos para celular*/
-
-@media (max-width: 767px) {
-  .contenedor-principal img {
-    width: 100%;
-  }
-}
-
-/* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .contenedor-principal img {
-    width: 85%;
-  }
-}
 
 /*Estilos Footer*/
 
@@ -207,34 +133,6 @@ header .navbar-nav {
   float: right;
 }
 
-/*Responsive*/
-
-/*Estilos para celular*/
-@media (max-width: 767px) {
-  .site-footer p {
-    font-size: 16px;
-  }
-
-  .social-icons {
-    margin-top: 10px;
-  }
-
-  .social-icons a {
-    font-size: 20px;
-    margin-right: 15px;
-  }
-
-  .quick-links {
-    display: none;
-  }
-}
-
-/* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .social-icons a {
-    font-size: 22px;
-  }
-}
 
 /*Estilos HTML Acerca de Nosotros*/
 
@@ -286,24 +184,7 @@ h2 {
   justify-content: center;
 }
 
-/*Responsive*/
 
-/*Estilos para celular*/
-@media (max-width: 767px) {
-  .contenedor-grid {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    justify-items: center;
-    margin-bottom: 20px;
-  }
-}
-
-/* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .card-text {
-    font-size: 14px;
-  }
-}
 
 /*Estilos HTML Servicios*/
 /*Estilos Grid*/
@@ -352,29 +233,6 @@ h3 {
   padding-left: 15px;
 }
 
-/*Responsive*/
-
-/*Estilos para celular*/
-@media (max-width: 767px) {
-  .servicios-grid {
-    grid-template-columns: repeat(1, 1fr);
-    height: auto;
-    gap: 10px;
-    justify-items: center;
-    margin: 50px;
-  }
-
-  .card {
-    width: 100%;
-  }
-}
-
-/* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .servicios-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 /*Estilos HTML Galeria*/
 /*Estilos Grid*/
@@ -409,22 +267,7 @@ h3 {
   margin-bottom: 150px;
 }
 
-/*Responsive*/
 
-/*Estilos para celular*/
-@media (max-width: 767px) {
-  .card-container {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-  }
-}
-
-/* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .card-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 /*Estilos HTML Contacto*/
 
@@ -476,20 +319,6 @@ label {
   outline: none;
 }
 
-/*Responsive*/
-
-/*Estilos para celular*/
-@media (max-width: 767px) {
-  .titulo-principal {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-  }
-
-  .custom-form {
-    max-width: 50%;
-  }
-}
 
 /*Estilo mapa*/
 
@@ -532,7 +361,190 @@ iframe {
   font-family: "Lato", sans-serif;
 }
 
-/*Responsive*/
+
+
+/*Responsive Header y Nav*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  header {
+    height: auto;
+  }
+
+  header .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  header .navbar-nav {
+    margin-top: 20px;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    height: 120px;
+  }
+
+  header .logo {
+    width: 150px;
+    height: 120px;
+  }
+
+  header .nav-link {
+    font-size: 18px;
+  }
+
+  header .navbar-nav {
+    margin-top: 60px;
+  }
+}
+
+/*Responsive título y párrafo principal*/
+
+/*Estilos para celular*/
+
+@media (max-width: 767px) {
+  .titulo-principal {
+    font-size: 32px;
+  }
+
+  .parrafo-principal,
+  .parrafo-secundario {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .titulo-principal {
+    font-size: 36px;
+  }
+}
+
+/*Responsive Imagen Principal*/
+
+/*Estilos para celular*/
+
+@media (max-width: 767px) {
+  .contenedor-principal img {
+    width: 100%;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contenedor-principal img {
+    width: 85%;
+  }
+}
+
+/*Responsive Footer*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .site-footer p {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .quick-links {
+    display: none;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .social-icons a {
+    font-size: 22px;
+  }
+}
+
+/*Responsive HTML Nosotros*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .contenedor-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card-text {
+    font-size: 14px;
+  }
+}
+
+/*Responsive HTML Servicios*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .servicios-grid {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+    gap: 10px;
+    justify-items: center;
+    margin: 50px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Responsive HTML Galeria*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Responsive HTML Contacto*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .titulo-principal {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  .custom-form {
+    max-width: 50%;
+  }
+}
+
+/*Responsive Mapa y Párrafo*/
 /*Estilos para celular*/
 @media (max-width: 767px) {
   .contenedor {
