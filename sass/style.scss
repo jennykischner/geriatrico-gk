@@ -1,65 +1,65 @@
-@charset "UTF-8";
-/*Variables Colores*/
-/*Variables Fuentes*/
+@import "variables";
+@import "mixins";
+
 /* Fuente para títulos */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom right, #abb39c, white);
+  background: linear-gradient(to bottom right, $colorPrincipal, white);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+// Estilos Header y Nav
 header {
   height: 150px;
   width: 100%;
   background-size: cover;
-}
-header .logo {
-  width: 180px;
-  height: 150px;
-}
-header .navbar-toggler,
-header .navbar-toggler-icon {
-  background-color: white;
-}
-header .nav-link {
-  display: inline;
-  margin-right: 20px;
-  font-family: "Baskervville", serif;
-  color: #333333;
-  font-size: 20px;
-}
-header .navbar-collapse {
-  display: flex;
-  justify-content: space-between;
-  background-color: #abb39c;
-  margin-left: auto;
-}
-header .navbar-collapse .navbar-nav {
-  display: flex;
-  flex-direction: row;
-  margin-top: 100px;
-}
-header .navbar-collapse .navbar-nav .nav-link {
-  text-decoration: none;
-  margin: 10px 10px 0;
-  color: #333333;
+  .logo {
+    width: 180px;
+    height: 150px;
+  }
+  .navbar-toggler,
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+  .nav-link {
+    display: inline;
+    margin-right: 20px;
+    font-family: "Baskervville", serif;
+    color: $colorSecundario;
+    font-size: 20px;
+  }
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    background-color: $colorPrincipal;
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px;
+
+      .nav-link {
+        text-decoration: none;
+        margin: 10px 10px 0;
+        color: $colorSecundario;
+      }
+    }
+    margin-left: auto;
+  }
 }
 
+// Estilos titulo principal y párrafo
 .titulo-principal {
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-  color: #333333;
+  @include estilos-titulo;
+  color: $colorSecundario;
   font-size: 40px;
 }
-
 .parrafo-principal,
 .parrafo-secundario {
   font-family: "Lato", sans-serif;
@@ -69,44 +69,48 @@ header .navbar-collapse .navbar-nav .nav-link {
   justify-content: center;
 }
 
+// Estilo de Imagen Principal
 .contenedor-principal {
   display: flex;
   justify-content: center;
-}
-.contenedor-principal img {
-  width: 75%;
-  height: auto;
+  img {
+    width: 75%;
+    height: auto;
+  }
 }
 
+// Estilos Footer
 .site-footer {
-  background-color: #abb39c;
+  background-color: $colorPrincipal;
   padding: 20px 0;
   text-align: center;
   width: 100%;
   bottom: 0;
   position: fixed;
-}
-.site-footer p {
-  margin: 0;
-  font-size: 14px;
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-}
-.site-footer .social-icons {
-  margin-top: 20px;
-}
-.site-footer .social-icons a {
-  text-decoration: none;
-  color: #333333;
-  font-size: 25px;
-  margin-right: 20px;
-  padding: 0px 15px;
-}
-.site-footer .quick-links {
-  margin-top: 30px;
-  float: right;
+  p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+  }
+  .social-icons {
+    margin-top: 20px;
+    a {
+      text-decoration: none;
+      color: $colorSecundario;
+      font-size: 25px;
+      margin-right: 20px;
+      padding: 0px 15px;
+    }
+  }
+  .quick-links {
+    margin-top: 30px;
+    float: right;
+  }
 }
 
+// Estilos HTML Acerca de Nosotros
+// Estilos Grid
 .contenedor-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -118,39 +122,35 @@ header .navbar-collapse .navbar-nav .nav-link {
   margin-bottom: 100px;
 }
 
+// Estilos Cards
 .card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  width: 18rem;
-}
-.card-img-top {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  max-width: 100%;
-  height: auto;
-}
-.card-body {
-  padding: 1rem;
-}
-.card-body p {
-  font-size: 10px;
-  color: #333;
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
+  @include estilos-card;
+  &-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-width: 100%;
+    height: auto;
+  }
+  &-body {
+    padding: 1rem;
+    p {
+        font-size: 10px;
+        color: #333;
+        font-family: "Lato", sans-serif;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+    }
+  }
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
+  @include estilos-titulo;
   font-family: "Montserrat", sans-serif;
 }
 
+// Estilos HTML Servicios
+// Estilos Grid
 .servicios-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -163,21 +163,17 @@ h2 {
 }
 
 .card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  width: 18rem;
+  @include estilos-card;
 }
 
 h3 {
   font-size: 20px;
   margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
-  color: #333333;
+  color: $colorSecundario;
   display: flex;
   justify-content: center;
-  background-color: #abb39c;
+  background-color: $colorPrincipal;
 }
 
 .list-group-flush {
@@ -186,7 +182,7 @@ h3 {
 
 .list-group-item {
   font-size: 16px;
-  color: #555;
+  color: $colorTerciario;
   font-family: "Lato", sans-serif;
   display: list-item;
   list-style: disc inside;
@@ -194,6 +190,8 @@ h3 {
   padding-left: 15px;
 }
 
+// Estilos HTML Galeria
+// Estilos Grid
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -204,61 +202,63 @@ h3 {
 }
 
 .card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  width: 18rem;
+  @include estilos-card;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-}
-.card:hover {
-  transform: scale(1.05);
-}
-.card-img-top {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .tarjeta-antes-footer {
   margin-bottom: 150px;
 }
 
+// Estilos HTML Contacto
+// Estilos Formulario
 .custom-form {
   max-width: 400px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
-}
-.custom-form .form-group {
-  margin-bottom: 20px;
-}
-.custom-form .form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-.custom-form .form-group .form-control {
-  width: 100%;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  transition: border-color 0.3s ease-in-out;
-}
-.custom-form .form-group .form-control:focus {
-  border-color: #333333;
-  outline: none;
-}
-.custom-form .btn {
-  padding: 8px 20px;
-  margin-right: 10px;
-  border-radius: 4px;
-  background-color: #abb39c;
-  font-family: "Lato", sans-serif;
-  color: #333333;
-  font-size: 15px;
-  cursor: pointer;
+
+  .form-group {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s ease-in-out;
+
+      &:focus {
+        border-color: #333333;
+        outline: none;
+      }
+    }
+  }
+
+  .btn {
+    padding: 8px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: #abb39c;
+    font-family: "Lato", sans-serif;
+    color: #333333;
+    font-size: 15px;
+    cursor: pointer;
+  }
 }
 
 iframe {
@@ -270,86 +270,105 @@ iframe {
 
 .contenedor {
   display: flex;
-}
-.contenedor .left-column {
-  flex: 1;
-  padding-right: 20px;
-}
-.contenedor .right-column {
-  flex: 1;
-  padding-left: 20px;
-}
-.contenedor .right-column .titulo-secundario {
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-  justify-content: flex-start;
-}
-.contenedor .right-column .parrafo-contacto {
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-}
-.contenedor .right-column .parrafo-antes-footer {
-  margin-bottom: 200px;
-  font-family: "Lato", sans-serif;
+
+  .left-column {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .right-column {
+    flex: 1;
+    padding-left: 20px;
+
+    .titulo-secundario {
+      @include estilos-titulo;
+      justify-content: flex-start;
+    }
+
+    .parrafo-contacto {
+      font-family: "Lato", sans-serif;
+      font-size: 15px;
+    }
+
+    .parrafo-antes-footer {
+      margin-bottom: 200px;
+      font-family: "Lato", sans-serif;
+    }
+  }
 }
 
 /*RESPONSIVE*/
+
 /*Responsive Header y Nav*/
+
 /*Estilos para celular*/
 @media (max-width: 767px) {
   header {
     height: auto;
   }
+
   header .logo {
     width: 120px;
     height: auto;
   }
+
   header .navbar-nav {
     margin-top: 20px;
   }
 }
+
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
   header {
     height: 120px;
   }
+
   header .logo {
     width: 150px;
     height: 120px;
   }
+
   header .nav-link {
     font-size: 18px;
   }
+
   header .navbar-nav {
     margin-top: 60px;
   }
 }
+
 /*Responsive título y párrafo principal*/
+
 /*Estilos para celular*/
+
 @media (max-width: 767px) {
   .titulo-principal {
     font-size: 32px;
   }
+
   .parrafo-principal,
   .parrafo-secundario {
     font-size: 16px;
   }
 }
+
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
   .titulo-principal {
     font-size: 36px;
   }
 }
+
 /*Responsive Imagen Principal*/
+
 /*Estilos para celular*/
+
 @media (max-width: 767px) {
   .contenedor-principal img {
     width: 80%;
   }
 }
+
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
   .contenedor-principal img {
@@ -357,30 +376,38 @@ iframe {
     margin-left: 15px;
   }
 }
+
 /*Responsive Footer*/
+
 /*Estilos para celular*/
 @media (max-width: 767px) {
   .site-footer p {
     font-size: 16px;
   }
+
   .social-icons {
     margin-top: 10px;
   }
+
   .social-icons a {
     font-size: 20px;
     margin-right: 15px;
   }
+
   .quick-links {
     display: none;
   }
 }
+
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
   .social-icons a {
     font-size: 22px;
   }
 }
+
 /*Responsive HTML Nosotros*/
+
 /*Estilos para celular*/
 @media (max-width: 767px) {
   .contenedor-grid {
@@ -388,22 +415,25 @@ iframe {
     gap: 20px;
     justify-items: center;
     margin-bottom: 100px;
-  }
-  .contenedor-grid .card {
-    max-width: 90%;
-    margin-bottom: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
-  }
-  .contenedor-grid .card-img-top {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
+
+    .card {
+      max-width: 90%;
+      margin-bottom: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
   }
 }
+
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
   .contenedor-grid {
@@ -414,7 +444,9 @@ iframe {
     margin-left: 15px;
   }
 }
+
 /*Responsive HTML Servicios*/
+
 /*Estilos para celular*/
 @media (max-width: 767px) {
   .servicios-grid {
@@ -425,10 +457,12 @@ iframe {
     margin: 50px;
     margin-bottom: 100px;
   }
+
   .card {
     width: 100%;
   }
 }
+
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
   .servicios-grid {
@@ -441,42 +475,50 @@ iframe {
     margin-bottom: 100px;
   }
 }
+
 /*Responsive HTML Galeria*/
+
 /*Estilos para celular*/
 @media (max-width: 767px) {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
-  }
-  .card-container .card {
-    max-width: 90%;
-    margin-bottom: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
-  }
-  .card-container .card-img-top {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
+
+    .card {
+      max-width: 90%;
+      margin-bottom: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
   }
 }
+
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .card {
     width: 80%;
     margin-left: 15px;
   }
+
   .card:last-child {
     margin-bottom: 130px;
   }
 }
 /*Responsive HTML Contacto*/
+
 /*Estilos para celular*/
 @media (max-width: 767px) {
   .titulo-principal {
@@ -484,20 +526,24 @@ iframe {
     justify-content: center;
     font-size: 25px;
   }
+
   .custom-form {
     max-width: 50%;
   }
 }
 /*Estilos para tablet*/
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .titulo-principal {
     display: flex;
     justify-content: center;
   }
+
   .custom-form {
     max-width: 50%;
   }
 }
+
 /*Responsive Mapa y Párrafo*/
 /*Estilos para celular*/
 @media (max-width: 767px) {
@@ -507,20 +553,24 @@ iframe {
     align-items: center;
     text-align: center;
   }
+
   .left-column,
   .right-column {
     width: 100%;
     padding: 0;
   }
+
   .titulo-secundario {
     justify-content: center !important;
   }
+
   iframe {
     width: 80%;
     height: 200px;
     margin: 10px 0;
   }
 }
+
 /*Estilos para tablet*/
 @media (min-width: 768px) and (max-width: 1023px) {
   .contenedor {
@@ -529,17 +579,20 @@ iframe {
     align-items: center;
     text-align: center;
   }
+
   .left-column,
   .right-column {
     width: 100%;
     padding: 0;
   }
+
   .titulo-secundario {
     justify-content: center !important;
   }
+
   iframe {
     width: 80%;
     height: 200px;
     margin: 10px 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}
