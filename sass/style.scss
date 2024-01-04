@@ -320,38 +320,42 @@ iframe {
 /*Responsive Header y Nav*/
 
 /* Estilos para celular */
+
 @media (max-width: 767px) {
   header {
-    height: auto; 
+    height: 100px; 
   }
   header .logo {
-    width: 120px;
-    height: auto;
+    width: 120px; 
+    height: auto; 
   }
   header .nav-link {
     font-size: 16px; 
+    margin-right: 10px; 
   }
   header .navbar-nav {
-    margin-top: 20px;
+    margin-top: 20px; 
   }
 }
 
-/* Estilos para tablets */
+/* Estilos para tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
   header {
-    height: 120px;
+    height: 120px; 
   }
   header .logo {
-    width: 150px;
-    height: 120px;
+    width: 150px; 
+    height: 120px; 
   }
   header .nav-link {
     font-size: 18px;
+    margin-right: 15px; 
   }
   header .navbar-nav {
     margin-top: 60px;
   }
 }
+
 /*Responsive título y párrafo principal*/
 
 /*Estilos para celular*/
