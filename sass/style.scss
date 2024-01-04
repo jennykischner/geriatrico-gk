@@ -313,27 +313,19 @@ iframe {
     }
   }
 }
-
-
 /*RESPONSIVE*/
-
 
 /*Responsive Header y Nav*/
 
 /*Estilos para celular*/
 @media (max-width: 767px) {
   header {
-    height: 100px;
+    height: auto;
   }
 
   header .logo {
     width: 120px;
-    height: 100px;
-  }
-
-  header .nav-link {
-    font-size: 16px;
-    margin-right: 10px;
+    height: auto;
   }
 
   header .navbar-nav {
@@ -354,9 +346,11 @@ iframe {
 
   header .nav-link {
     font-size: 18px;
-    margin-right: 15px;
   }
 
+  header .navbar-nav {
+    margin-top: 60px;
+  }
 }
 
 /*Responsive título y párrafo principal*/
@@ -403,12 +397,30 @@ iframe {
 
 /*Estilos para celular*/
 @media (max-width: 767px) {
-  .footer-icons a {
-    font-size: 18px;
-    margin: 0 5px;
+  .site-footer p {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .quick-links {
+    display: none;
   }
 }
 
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .social-icons a {
+    font-size: 22px;
+  }
+}
 
 /*Responsive HTML Nosotros*/
 
@@ -488,6 +500,7 @@ iframe {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+    justify-items: center;
 
     .card {
       max-width: 90%;
@@ -552,6 +565,7 @@ iframe {
 }
 
 /*Responsive Mapa y Párrafo*/
+
 /*Estilos para celular*/
 @media (max-width: 767px) {
   .contenedor {
@@ -575,6 +589,9 @@ iframe {
     width: 80%;
     height: 200px;
     margin: 10px 0;
+  }
+  p {
+    font-size: 12px;
   }
 }
 
@@ -601,5 +618,9 @@ iframe {
     width: 80%;
     height: 200px;
     margin: 10px 0;
+  }
+
+  p {
+    font-size: 14px;
   }
 }

@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /*Variables Colores*/
-/*Variables Fuentes*/
 /* Fuente para títulos */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
@@ -136,7 +135,7 @@ header .navbar-collapse .navbar-nav .nav-link {
 }
 .card-body p {
   font-size: 10px;
-  color: #333;
+  color: #333333;
   font-family: "Lato", sans-serif;
   font-size: 15px;
   display: flex;
@@ -447,6 +446,7 @@ iframe {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+    justify-items: center;
   }
   .card-container .card {
     max-width: 90%;
@@ -520,6 +520,9 @@ iframe {
     height: 200px;
     margin: 10px 0;
   }
+  p {
+    font-size: 12px;
+  }
 }
 /*Estilos para tablet*/
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -541,5 +544,8 @@ iframe {
     width: 80%;
     height: 200px;
     margin: 10px 0;
+  }
+  p {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
