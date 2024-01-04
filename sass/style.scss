@@ -317,23 +317,23 @@ iframe {
 
 /*RESPONSIVE*/
 
-/*RESPONSIVE*/
 
 /*Responsive Header y Nav*/
 
 /*Estilos para celular*/
 @media (max-width: 767px) {
   header {
-    height: auto;
+    height: 100px;
   }
 
   header .logo {
     width: 120px;
-    height: auto;
+    height: 100px;
   }
 
   header .nav-link {
     font-size: 10px;
+    margin-right: 10px;
   }
 
   header .navbar-nav {
@@ -354,6 +354,7 @@ iframe {
 
   header .nav-link {
     font-size: 18px;
+    margin-right: 15px;
   }
 
   header .navbar-nav {
