@@ -20,14 +20,17 @@ header {
   height: 150px;
   width: 100%;
   background-size: cover;
+
   .logo {
     width: 180px;
     height: 150px;
   }
+
   .navbar-toggler,
   .navbar-toggler-icon {
     background-color: white;
   }
+
   .nav-link {
     display: inline;
     margin-right: 20px;
@@ -35,10 +38,12 @@ header {
     color: $colorSecundario;
     font-size: 20px;
   }
+
   .navbar-collapse {
     display: flex;
     justify-content: space-between;
     background-color: $colorPrincipal;
+
     .navbar-nav {
       display: flex;
       flex-direction: row;
@@ -50,6 +55,7 @@ header {
         color: $colorSecundario;
       }
     }
+
     margin-left: auto;
   }
 }
@@ -60,6 +66,7 @@ header {
   color: $colorSecundario;
   font-size: 40px;
 }
+
 .parrafo-principal,
 .parrafo-secundario {
   font-family: "Lato", sans-serif;
@@ -73,6 +80,7 @@ header {
 .contenedor-principal {
   display: flex;
   justify-content: center;
+
   img {
     width: 75%;
     height: auto;
@@ -87,14 +95,17 @@ header {
   width: 100%;
   bottom: 0;
   position: fixed;
+
   p {
     margin: 0;
     font-size: 14px;
     font-family: "Lato", sans-serif;
     font-size: 20px;
   }
+
   .social-icons {
     margin-top: 20px;
+
     a {
       text-decoration: none;
       color: $colorSecundario;
@@ -103,6 +114,7 @@ header {
       padding: 0px 15px;
     }
   }
+
   .quick-links {
     margin-top: 30px;
     float: right;
@@ -125,28 +137,31 @@ header {
 // Estilos Cards
 .card {
   @include estilos-card;
+
   &-img-top {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     max-width: 100%;
     height: auto;
   }
+
   &-body {
     padding: 1rem;
+
     p {
-        font-size: 10px;
-        color: #333;
-        font-family: "Lato", sans-serif;
-        font-size: 15px;
-        display: flex;
-        justify-content: center;
+      font-size: 10px;
+      color: $colorSecundario;
+      font-family: "Lato", sans-serif;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
     }
   }
 }
 
 h2 {
   @include estilos-titulo;
-  font-family: "Montserrat", sans-serif;    
+  font-family: "Montserrat", sans-serif;
 }
 
 // Estilos HTML Servicios
@@ -205,9 +220,11 @@ h3 {
   @include estilos-card;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
+
   &:hover {
     transform: scale(1.05);
   }
+
   &-img-top {
     width: 100%;
     height: 100%;
@@ -243,7 +260,7 @@ h3 {
       transition: border-color 0.3s ease-in-out;
 
       &:focus {
-        border-color: #333333;
+        border-color: $colorSecundario;
         outline: none;
       }
     }
@@ -255,7 +272,7 @@ h3 {
     border-radius: 4px;
     background-color: #abb39c;
     font-family: "Lato", sans-serif;
-    color: #333333;
+    color: $colorSecundario;
     font-size: 15px;
     cursor: pointer;
   }
@@ -469,6 +486,7 @@ iframe {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
+
   .card {
     width: 80%;
     margin: 50px 15px;
@@ -517,6 +535,7 @@ iframe {
     margin-bottom: 130px;
   }
 }
+
 /*Responsive HTML Contacto*/
 
 /*Estilos para celular*/
@@ -531,6 +550,7 @@ iframe {
     max-width: 50%;
   }
 }
+
 /*Estilos para tablet*/
 
 @media (min-width: 768px) and (max-width: 1023px) {
