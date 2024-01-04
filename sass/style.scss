@@ -319,49 +319,34 @@ iframe {
 
 /*Responsive Header y Nav*/
 
-/*Estilos para celular*/
-
+/* Estilos para celular */
 @media (max-width: 767px) {
-  header {
-    height: auto; 
-    padding: 10px; 
+  header.navbar .navbar-nav {
+    margin-top: 20px;
   }
-
-  header .logo {
-    width: 100px; 
+  header.navbar .logo {
+    width: 120px;
     height: auto;
-  }
-
-  header .navbar-nav {
-    margin-top: 10px;
-    text-align: center; 
-  }
-
-  header .nav-link {
-    display: block; 
-    margin-bottom: 10px; 
   }
 }
 
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
-  header {
+  header.navbar {
     height: 120px;
   }
-
-  header .logo {
+  header.navbar .logo {
     width: 150px;
     height: 120px;
   }
-
-  header .nav-link {
+  header.navbar .nav-link {
     font-size: 18px;
   }
-
-  header .navbar-nav {
+  header.navbar .navbar-nav {
     margin-top: 60px;
   }
 }
+
 
 /*Responsive título y párrafo principal*/
 
