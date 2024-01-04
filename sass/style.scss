@@ -316,10 +316,12 @@ iframe {
 
 /*RESPONSIVE*/
 
+/*RESPONSIVE*/
+
 /*Responsive Header y Nav*/
 
 /*Estilos para celular*/
-@media (max-width: 767px) {
+@media screen and (max-width: 550px) {
   header {
     height: auto;
   }
@@ -335,7 +337,7 @@ iframe {
 }
 
 /* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 551px) and (max-width: 600px) {
   header {
     height: 120px;
   }
@@ -357,8 +359,7 @@ iframe {
 /*Responsive título y párrafo principal*/
 
 /*Estilos para celular*/
-
-@media (max-width: 767px) {
+@media screen and (max-width: 550px) {
   .titulo-principal {
     font-size: 32px;
   }
@@ -370,7 +371,7 @@ iframe {
 }
 
 /* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 551px) and (max-width: 810px) {
   .titulo-principal {
     font-size: 36px;
   }
@@ -379,15 +380,14 @@ iframe {
 /*Responsive Imagen Principal*/
 
 /*Estilos para celular*/
-
-@media (max-width: 767px) {
+@media screen and (max-width: 550px) {
   .contenedor-principal img {
     width: 80%;
   }
 }
 
 /* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 551px) and (max-width: 900px) {
   .contenedor-principal img {
     width: 85%;
     margin-left: 15px;
@@ -397,7 +397,7 @@ iframe {
 /*Responsive Footer*/
 
 /*Estilos para celular*/
-@media (max-width: 767px) {
+@media screen and (max-width: 550px) {
   .site-footer p {
     font-size: 16px;
   }
@@ -417,7 +417,7 @@ iframe {
 }
 
 /* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 551px) and (max-width: 1100px) {
   .social-icons a {
     font-size: 22px;
   }
@@ -426,7 +426,7 @@ iframe {
 /*Responsive HTML Nosotros*/
 
 /*Estilos para celular*/
-@media (max-width: 767px) {
+@media screen and (max-width: 550px) {
   .contenedor-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
@@ -452,7 +452,7 @@ iframe {
 }
 
 /* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 551px) and (max-width: 1300px) {
   .contenedor-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -465,7 +465,7 @@ iframe {
 /*Responsive HTML Servicios*/
 
 /*Estilos para celular*/
-@media (max-width: 767px) {
+@media screen and (max-width: 550px) {
   .servicios-grid {
     grid-template-columns: repeat(1, 1fr);
     height: auto;
@@ -481,7 +481,7 @@ iframe {
 }
 
 /* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 551px) and (max-width: 1100px) {
   .servicios-grid {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -497,7 +497,7 @@ iframe {
 /*Responsive HTML Galeria*/
 
 /*Estilos para celular*/
-@media (max-width: 767px) {
+@media screen and (max-width: 550px) {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
@@ -521,7 +521,7 @@ iframe {
 }
 
 /* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 551px) and (max-width: 1300px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -539,7 +539,7 @@ iframe {
 /*Responsive HTML Contacto*/
 
 /*Estilos para celular*/
-@media (max-width: 767px) {
+@media screen and (max-width: 550px) {
   .titulo-principal {
     display: flex;
     justify-content: center;
@@ -553,7 +553,7 @@ iframe {
 
 /*Estilos para tablet*/
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 551px) and (max-width: 1100px) {
   .titulo-principal {
     display: flex;
     justify-content: center;
@@ -566,7 +566,7 @@ iframe {
 
 /*Responsive Mapa y Párrafo*/
 /*Estilos para celular*/
-@media (max-width: 767px) {
+@media screen and (max-width: 550px) {
   .contenedor {
     display: flex;
     flex-direction: column;
@@ -592,7 +592,7 @@ iframe {
 }
 
 /*Estilos para tablet*/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 551px) and (max-width: 1100px) {
   .contenedor {
     display: flex;
     flex-direction: column;
@@ -616,3 +616,4 @@ iframe {
     margin: 10px 0;
   }
 }
+
